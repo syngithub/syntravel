@@ -53,6 +53,10 @@
             background: none;
             font-size: 1.2rem;
             padding: 12px 0;
+
+            &.is-current-link{
+                color: #fabb69;
+            }
         }
     }
 }
