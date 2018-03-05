@@ -2,10 +2,12 @@ path = require('path');
 
 module.exports = {
     context: path.resolve(__dirname, './app/assets/js/'),
-    entry: './app.js',
+
+    entry: { app: './app.js',
+        vendor: './vendor.js'},
     output: {
         path: path.resolve(__dirname, './app/temp/js'),
-        filename: "app.js"
+        filename: "[name].js"
     },
     module: {
         rules: [
